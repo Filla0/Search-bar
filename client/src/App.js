@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { Users } from "./users";
+// import {  Clients } from "./clients.json";
 import "./App.css";
 import Table from "./Table";
 import axios from "axios";
@@ -16,11 +16,11 @@ import axios from "axios";
 //         onChange={(e) => setQuery(e.target.value.toLowerCase())}
 //       />
 //       <ul className="list">
-//         {Users.filter((asd) =>
+//         {clients.filter((asd) =>
 //           asd.first_name.toLowerCase().includes(query)
-//         ).map((user) => (
-//           <li className="listItem" key={user.id}>
-//             {user.first_name}
+//         ).map((clients) => (
+//           <li className="listItem" key={clients.id}>
+//             {clients.first_name}
 //           </li>
 //         ))}
 //       </ul>
@@ -33,8 +33,8 @@ import axios from "axios";
 // function App() {
 //   const [query, setQuery] = useState("");
 //   const keys = ["first_name", "last_name", "email"];
-//   const search = (data) => {
-//     return data.filter((item) =>
+//   const search = (clients) => {
+//     return clients.filter((item) =>
 //       keys.some((key) => item[key].toLowerCase().includes(query))
 //     );
 //   };
@@ -45,7 +45,7 @@ import axios from "axios";
 //         placeholder="Search..."
 //         onChange={(e) => setQuery(e.target.value.toLowerCase())}
 //       />
-//     {<Table data={Search(Users)} />}
+//     {<Table data={Search(clients)} />}
 //   </div>
 // );
 // }
